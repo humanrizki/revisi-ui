@@ -1,0 +1,28 @@
+.form-main{
+    border-radius: 5px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat',sans-serif;
+}
+.form-group label{
+    margin: 5px 0px;
+}
+.form-group button{
+    margin: 10px 0px;
+}
+.form-group input, .form-group textarea{
+    padding: 10px 12px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+.form-group input:focus, .form-group textarea:focus{
+    outline: none;
+    border: 2px solid aquamarine;
+}
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+}

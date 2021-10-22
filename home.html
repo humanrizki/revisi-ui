@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="/css/slideShow.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/43727f9558.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <nav class="navbar clearfix">
+            <div class="navigate float-end">
+                <span>
+                    <i class="bi bi-justify"></i>
+                </span>
+            </div>
+                <ul class="ul-nav naik">
+                    <li class="li-nav">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="li-nav">
+                        <a href="profil.html">Profil</a>
+                    </li>
+                    <li class="li-nav li-flex" data-drop="elearning">
+                        <a href="">Elearning</a>
+                        <span>
+                            <i class="bi bi-arrow-right-square-fill "></i>
+                        </span>
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Elearning SMK</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-drop" data-for-drop="elearning">
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none close">
+                                <span>
+                                    <i class="bi bi-arrow-left-square-fill"></i>
+                                </span>
+                                <a href="">Back</a>
+                            </li>
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Elearning SMK</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-nav li-flex" data-drop="kategori">
+                        <a href="">Kategori</a>
+                        <span>
+                            <i class="bi bi-arrow-right-square-fill i-nav"></i>
+                        </span>
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Berita terkini</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-drop" data-for-drop="kategori">
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none close">
+                                <span>
+                                    <i class="bi bi-arrow-left-square-fill"></i>
+                                </span>
+                                <a href="">Back</a>
+                            </li>
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Berita terkini</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-nav li-flex" data-drop="galeri">
+                        <a href="">Galeri</a>
+                        <span>
+                            <i class="bi bi-arrow-right-square-fill i-nav"></i>
+                        </span>
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Galeri Foto</a>
+                            </li>
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Galeri Video</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="li-drop" data-for-drop="galeri">
+                        <ul class="ul-nav-none" id="ul-nav-none">
+                            <li class="li-nav-none close">
+                                <span>
+                                    <i class="bi bi-arrow-left-square-fill"></i>
+                                </span>
+                                <a href="">Back</a>
+                            </li>
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Galeri Foto</a>
+                            </li>
+                            <li class="li-nav-none li-nav-content">
+                                <a href="">Galeri Video</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+    <div class="contain">
+        <div class="slides-img aktif">
+            <img src="img/tkj.jpg" alt="Teknik Jaringan" data-img="1">
+        </div>
+        <div class="slides-img">
+            <img src="img/mm.jpg" alt="Multimedia" data-img="2">
+        </div>
+        <div class="slides-img">
+            <img src="img/rpl.jpg" alt="Rekayasa Perangkat Lunak" data-img="3">
+        </div>
+        <div class="button">
+            <button class="btn btn-primary button-left">
+                <span class="span-i ">
+                    <i class="bi bi-caret-left-fill"></i>
+                </span>
+            </button>
+            <button class="btn btn-primary button-right">
+                <span class="span-i">
+                    <i class="bi bi-caret-right-fill"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start text-white" 
+        style="background-color: #1c2331; font-family: Montserrat, sans-serif;">
+    <!-- Section: Social media -->
+    <section
+            class="d-flex justify-content-between p-4"
+            style="background-color: rgb(54, 173, 133)">
+    <!-- Left -->
+    <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+        <a href="" class="text-white me-4 fs-3">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4 fs-3">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+        <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+                <h6 class="text-uppercase fw-bold ">Company name</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block hr-footer"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p class="my-2">
+                    SMK CITRA NEGARA DEPOK
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Products</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p>
+                    <a href="#!" class="text-white disabled">BOOTSTRAP 5</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white disabled">JQUERY</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white disabled">JAVASCRIPT</a>
+                </p>
+                <p>
+                    <a href="#!" class="text-white disabled">CSS 3</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p><i class="fas fa-home mr-3"></i> New land Street, Beji</p>
+                <p><i class="fas fa-envelope mr-3"></i> smkcitranegara@ymail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +62  0812-1998-0313</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">THEKILL</a
+            >
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="/js/jquery.js" type="text/javascript"></script>
+    <script src="/js/navbar.js" type="text/javascript"></script>
+    <script src="/js/slideShow.js"></script>
+</body>
+</html>

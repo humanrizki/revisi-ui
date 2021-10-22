@@ -1,0 +1,122 @@
+div.nav{
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: azure;
+}
+div.nav nav.navbar{
+    display: inline-flex;
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+  }
+  div.nav nav.navbar div.kiri{
+    display: inherit;
+    width: max-content;
+    align-items: center;
+  }
+  .kiri img{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .kiri h2{
+    font-size: x-large;
+    margin: 0px;
+    padding:0px;
+  }
+  .kanan {
+    display: inline-block;
+    
+  }
+  .kanan ul{
+    display: flex;
+    margin: 0px 20px;
+  }
+  .kanan ul li{
+    display: flow-root;
+    margin: 0px 20px;
+    list-style-type: none;
+  }
+  .tengah {
+    display: flex;
+    width: 40%;
+  }
+  .tengah input[type="text"]{
+    border-radius: 6px;
+    display: block;
+    border: 1px solid #cdd9ed;
+    width: 100%;
+    padding: 8px 16px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0px 6px 6px 0px;
+  }
+  .tengah input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #275efe;
+  }
+  .tengah input[type="text"], .tengah span{
+    white-space: nowrap;
+  }
+  .tengah span{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #eef4ff;
+    border: 1px solid #cdd9ed;
+    border-radius: 6px 0px 0px 6px;
+    border-right: none;
+  }
+  .tengah span > i{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .tengah:focus-within > span{
+    background-color: #275efe;
+    border: 1px solid #275efe;
+  }
+.kanan{
+    display: none;
+}
+@media only screen and (max-width:756px) and (min-width:567px){
+    div.container {
+        display: none;
+    }
+    .kanan {
+        display: inline-block;
+    }
+    .nav-sub{
+        display: inline-block;
+        width: 100%;
+    }
+    .nav-sub .table{
+        display: table;
+        background-color: #b8c5ee;
+    
+    }
+    .tr{
+        display: table-row;
+    }
+    
+    .td {
+        display: table-cell;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        background-color: #275efe;
+        border-bottom: 2px solid #fff;
+        
+    }
+    .td a{
+        color: white;
+        padding: 19px 0px;
+    }
+}
+@media only screen and (max-width:567px) {
+    
+}

@@ -1,0 +1,35 @@
+.contain{
+    display: inline-flex;
+    width: 100%;
+    height: max-content;
+    position: relative;    
+    justify-content: center;    
+}
+.slides-img.aktif{
+    display: inline-flex;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin: 0px auto;
+    z-index: 0;
+}
+.slides-img img{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    height: 60%;
+}
+.slides-img{
+    display: none;
+}
+.button{
+    display: inline-flex;
+    width: 80%;
+    height: max-content;
+    padding: 20px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 10%;
+    justify-content: space-between;
+}

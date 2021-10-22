@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*,a,h1,h2,h3,h4,h5,h6,p,strong,small,body{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{
+    color: white !important;
+}
+@media only screen and (max-width:756px){
+    .nav{
+        display: inline-block;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0px;
+    }
+    .navbar{
+        display: inherit;
+        width: 100%;
+        height: 50px;
+        background-color: aquamarine;
+        padding: 0px;
+        position: relative;
+        z-index: 9;
+    }
+    .ul-nav-none{
+        display: inherit;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .li-nav-none{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .ul-nav{
+        display: inline-flex;
+        width: 100vw;
+        background-color: rgb(99, 214, 176);
+        height: max-content;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        padding: 0px;
+        z-index: -1;
+    }
+    .ul-nav{
+        transform: translateY(-400px);
+        transition: .5s;
+
+    }
+    .ul-nav.turun{
+        transform: translateY(6px);
+        transition: .5s;
+    }
+    .navbar .navigate{
+        display: inline-flex;
+        width: max-content;
+        align-items: center;
+        padding: 0px 20px;
+        position: relative;
+        z-index: 2;
+    }
+    .navigate:hover{
+        background-color: transparent;
+        cursor: default;
+    }
+    .navigate > span i{
+        padding: 5px 8px;
+        font-size: x-large;
+        color: rgb(92, 92, 92);
+    }
+    .navigate > span i:hover {
+        border-radius: 6px 6px 6px 6px;
+        background-color: rgb(61, 214, 163);
+        cursor: pointer;
+        color: white;
+    }
+
+    .li-nav{
+        display: inherit;
+        height: 40px;
+        align-items: center;
+        padding: 0px 20px;
+        cursor: pointer;
+        justify-content: flex-start;
+    }
+    .li-flex{
+        display: inline-flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .li-drop{
+        width: 100%;
+        display: none;
+    }
+    .li-drop .ul-nav-none{
+        width: 100%;
+    }
+    .li-flex  > span i{
+        font-size: larger;
+        color: rgb(92, 92, 92);;
+    }
+    .li-flex:hover  > span i{
+        color: white;
+    }
+    .li-drop .ul-nav-none .li-nav-content a{
+        font-size: larger;
+    }
+    .li-nav:hover{
+        background-color: rgb(64, 156, 126);
+    }
+    .li-nav a:hover{
+        color: white;
+    }
+    .li-nav a{
+        text-decoration: none;
+        font-size: larger;
+        color: rgb(255, 255, 255);
+    }
+
+    .close{
+        display: flex;
+        height: 40px;
+        align-items: center;
+        padding: 0px 20px;
+        background-color: rgb(64, 156, 126);
+
+    }
+    .close a{
+        color: white;
+        margin-left: 10px;
+        font-size: larger;
+        text-decoration: none;
+    }
+    .close span i{
+        font-size: larger;
+        color: white;
+    }
+    
+    .li-nav-content{
+        width: 100%;
+        background-color: rgb(43, 112, 89);
+    }
+    .li-nav-content:hover{
+        background-color: rgb(38, 104, 82);
+    }
+    .li-nav-none.li-nav-content a{
+        color: white;
+        padding: 8px 20px;
+    }
+    .li-nav-content a{
+        text-decoration: none;
+    }
+    .li-nav-content a:hover{
+        text-decoration: underline;
+    }
+    .li-flex > .ul-nav-none{
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 757px) {
+    .nav {
+        width: 100%;
+        display: flex;
+        height: max-content;
+        background-color: rgb(99, 214, 176);
+        font-family: 'Montserrat',sans-serif;
+        font-size: larger;
+    }
+    .navbar {
+        display: inline-flex;
+        width: inherit;
+        height: 70px;
+    }
+    .navbar .navigate{
+        display: none;
+    }
+    .navbar .ul-nav{
+        display: flex;
+        align-items: center;
+        width: inherit;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .navbar .ul-nav .li-nav{
+        list-style-type: none;
+        padding: 21px 20px;        
+    }
+    .li-flex{
+        position: relative;
+    }   
+    .li-flex:hover > .ul-nav-none{
+        display: inline-flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .li-flex > .ul-nav-none{
+        position: absolute;
+        top: 72px;
+        left: 0px;
+        width: max-content;
+        z-index: 1;
+        display: none;
+        background-color: rgb(99, 214, 176);
+        border-radius: 0px 0px 6px 6px;
+    }
+    .ul-nav-none > .li-nav-none{
+        padding: 10px 20px;
+        
+    }
+    .ul-nav-none > .li-nav-none a:hover{
+        text-decoration: underline;
+    }
+    .ul-nav-none > .li-nav-none:hover{
+        background-color: rgb(64, 156, 126);
+    }
+    .ul-nav-none > .li-nav-none:last-child:hover{
+        background-color: rgb(64, 156, 126);
+        border-radius: 0px 0px 6px 6px;
+    }
+    .li-nav a{
+        color: white;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .li-nav:hover{
+        background-color: rgb(64, 156, 126);
+    }
+    .li-drop{
+        display: none;
+    }
+    .li-flex span i{
+        color:rgb(92, 92, 92) ;
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+    .li-flex:hover > span i{
+        color: white;
+    }
+    
+}

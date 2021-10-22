@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 245, 245);
+}
+.card-body{
+    font-family: 'Montserrat',sans-serif;
+}
+.card-footer{
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 50px !important;
+    align-items: center;
+}
+.card-footer {
+    font-family: 'Montserrat',sans-serif; 
+}
+hr{
+    display: inline-block;
+    height: 5px !important;
+    width: 100%;
+    border-radius: 6px;
+}
