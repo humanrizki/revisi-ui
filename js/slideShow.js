@@ -6,7 +6,6 @@ let buttons = document.querySelector('.button').querySelectorAll('button').forEa
         button.addEventListener('click',()=>{
             nextImage(-1,'prev');
         });
-        
     }else if(button.classList.contains('button-right')){
         button.addEventListener('click',()=>{
             nextImage(1,'next');

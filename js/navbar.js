@@ -47,6 +47,18 @@ function checkWidth(){
 }
 function merubahIsi(){
     if(checkWidth()){
+        ulNav.querySelectorAll('.li-nav').forEach((liN)=>{
+            if(!liN.classList.contains('li-flex')){
+                liN.querySelector('a').addEventListener('mouseover',(a)=>{
+                    a.target.style.textDecoration = 'underline';
+                    console.log(liN);
+                });
+                liN.querySelector('a').addEventListener('mouseout',(a)=>{
+                    a.target.style.textDecoration = 'none';
+                });
+            }
+        });
+        
         ulNav.querySelectorAll('.li-flex').forEach((liF)=>{
             liF.querySelector('span i')
             .setAttribute('class','bi bi-arrow-down-square-fill');
