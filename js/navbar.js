@@ -3,10 +3,19 @@ const button = document.querySelector('.navigate > span i');
 function resizeToSmall(){
     button.addEventListener('click',function(){
         ulNav.style.transition = '.5s';
+        ulNav.parentElement.classList.toggle('tinggi');
         ulNav.classList.toggle('turun');
-        // setTimeout(()=>{
-        //     ulNav.style.zIndex = '1';
-        // },90);
+        ulNav.querySelectorAll('.li-nav').forEach((liN)=>{
+            if(!liN.classList.contains('li-flex')){
+                liN.querySelector('a').addEventListener('mouseover',(a)=>{
+                    a.target.style.textDecoration = 'underline';
+                    console.log(liN);
+                });
+                liN.querySelector('a').addEventListener('mouseout',(a)=>{
+                    a.target.style.textDecoration = 'none';
+                });
+            }
+        });
         ulNav.querySelectorAll('.li-flex').forEach((li)=>{
             li.querySelector('a').setAttribute('href','javascript: void(0)');
             li.addEventListener('click',()=>{

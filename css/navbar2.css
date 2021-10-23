@@ -2,6 +2,7 @@
 *,a,h1,h2,h3,h4,h5,h6,p,strong,small,body{
     margin: 0px;
     padding: 0px;
+    /* border:1px solid black; */
 }
 a:hover{
     color: white !important;
@@ -16,8 +17,12 @@ a:hover{
     .navbar{
         display: inline-block !important;
         width: 100%;
+        height: 50px;
         padding: 0px;
         margin: 0px
+    }
+    .navbar.tinggi{
+        height: max-content;
     }
     .ul-nav-none{
         display: inherit;
@@ -32,7 +37,7 @@ a:hover{
     }
     .ul-nav{
         display: inline-flex;
-        width: 100vw;
+        width: 100%;
         height: 0px;
         padding: 0px;
         margin-bottom: 0px;
@@ -43,7 +48,7 @@ a:hover{
     }
   
     .ul-nav.turun{
-        height: max-content;
+        animation: navTransition .5s infinite;
         transition: .5s;
     }
     .navbar .navigate{
@@ -155,6 +160,20 @@ a:hover{
     }
     .li-flex > .ul-nav-none{
         display: none;
+    }
+    @keyframes navTransition {
+        0%{
+            height: 0%;
+            overflow: hidden;
+        }
+        50%{
+            height: 50%;
+            overflow: visible;
+        }
+        100%{
+            height: 100%;
+            overflow: visible;
+        }
     }
 
 }

@@ -1,32 +1,33 @@
+const slides = document.querySelectorAll('.slides-img');
+let indexImg = 0;
+slides[0].classList.toggle('aktif');
 let buttons = document.querySelector('.button').querySelectorAll('button').forEach((button,indexB)=>{
-    let indexImg = 1;
-    const slides = document.querySelectorAll('.slides-img');
-    if(indexImg > slides.length) {indexImg=1}
-    if(indexImg < 1) {indexImg=slides.length}
     if(button.classList.contains('button-left')){
-    
-
-        slides.forEach((img)=>{
-            button.addEventListener('click',()=>{
-                indexImg -= 1;
-                img.getAttribute('data-img') == indexImg ? img.classList.toggle('aktif') : img.classList.toggle('aktif');
-            });
+        button.addEventListener('click',()=>{
+            nextImage(-1,'prev');
         });
         
     }else if(button.classList.contains('button-right')){
-        
         button.addEventListener('click',()=>{
-            indexImg += 1;
-                slides.forEach((img,index)=>{
-                    if($(img).data('img') == indexImg){
-                        
-                    }
-                // console.log(img);
-            });
-            if(indexImg >= slides.length){indexImg=1}
-            console.log(img);
-            
+            nextImage(1,'next');
         });
     }
-    
+    const nextImage = (value, direction) =>{
+        if(direction=='next'){
+            indexImg += value;
+            if(indexImg==slides.length){
+                indexImg = 0;
+            }
+        } else {
+            if(indexImg == 0){
+                indexImg = slides.length - 1;
+            } else if(indexImg > 1 || indexImg == 1){
+                indexImg += value;
+            }
+        }   
+        for(let i = 0; i < slides.length; i++){
+            slides[i].classList.remove('aktif');
+        }
+        slides[indexImg].classList.add('aktif');
+    };
 })
