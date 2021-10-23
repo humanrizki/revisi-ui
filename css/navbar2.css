@@ -11,21 +11,19 @@ a:hover{
         display: inline-block;
         width: 100%;
         font-family: 'Montserrat', sans-serif;
-        padding: 0px;
+        margin: 0px;
     }
     .navbar{
-        display: inherit;
+        display: inline-block !important;
         width: 100%;
-        height: 50px;
-        background-color: aquamarine;
         padding: 0px;
-        position: relative;
-        z-index: 9;
+        margin: 0px
     }
     .ul-nav-none{
         display: inherit;
         flex-direction: column;
         padding: 0px;
+        margin: 0px;
     }
     .li-nav-none{
         height: 40px;
@@ -35,33 +33,29 @@ a:hover{
     .ul-nav{
         display: inline-flex;
         width: 100vw;
+        height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
         background-color: rgb(99, 214, 176);
-        height: max-content;
         flex-direction: column;
         justify-content: center;
-        position: relative;
-        padding: 0px;
-        z-index: -1;
+        overflow: hidden;
     }
-    .ul-nav{
-        transform: translateY(-400px);
-        transition: .5s;
-
-    }
+  
     .ul-nav.turun{
-        transform: translateY(6px);
+        height: max-content;
         transition: .5s;
     }
     .navbar .navigate{
         display: inline-flex;
-        width: max-content;
+        height: 50px;
+        width: 100%;
+        background-color: aquamarine;
         align-items: center;
         padding: 0px 20px;
-        position: relative;
-        z-index: 2;
+        margin-top: -10px;
     }
     .navigate:hover{
-        background-color: transparent;
         cursor: default;
     }
     .navigate > span i{
@@ -83,28 +77,32 @@ a:hover{
         padding: 0px 20px;
         cursor: pointer;
         justify-content: flex-start;
+        border-bottom: 1px solid black;
     }
     .li-flex{
         display: inline-flex;
         width: 100%;
         justify-content: space-between;
+        margin: 0px;
     }
     .li-drop{
         width: 100%;
         display: none;
+        margin: 0px;
     }
     .li-drop .ul-nav-none{
         width: 100%;
+        margin: 0px;
     }
     .li-flex  > span i{
-        font-size: larger;
+        font-size: small;
         color: rgb(92, 92, 92);;
     }
     .li-flex:hover  > span i{
         color: white;
     }
     .li-drop .ul-nav-none .li-nav-content a{
-        font-size: larger;
+        font-size: small;
     }
     .li-nav:hover{
         background-color: rgb(64, 156, 126);
@@ -114,7 +112,7 @@ a:hover{
     }
     .li-nav a{
         text-decoration: none;
-        font-size: larger;
+        font-size: small;
         color: rgb(255, 255, 255);
     }
 
@@ -129,16 +127,17 @@ a:hover{
     .close a{
         color: white;
         margin-left: 10px;
-        font-size: larger;
+        font-size: small;
         text-decoration: none;
     }
     .close span i{
-        font-size: larger;
+        font-size: small;
         color: white;
     }
     
     .li-nav-content{
         width: 100%;
+        border-bottom: 1px solid white;
         background-color: rgb(43, 112, 89);
     }
     .li-nav-content:hover{
