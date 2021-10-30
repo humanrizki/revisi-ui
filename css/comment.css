@@ -21,8 +21,3 @@
     outline: none;
     border: 2px solid aquamarine;
 }
-.disabled{
-    pointer-events: none;
-    cursor: default;
-    text-decoration: none;
-}

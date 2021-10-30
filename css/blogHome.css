@@ -45,7 +45,15 @@
         overflow: hidden;
         border-radius: 5px 0px 0px 5px;
     }
-    .body-blog .left-blog img{
+    .col-lg-8 .body-blog .left-blog img{
+        display: inline-block;
+        width: 400px;
+        height: 223px;
+        box-shadow: 4px 0px rgb(43, 168, 105);
+        object-fit: cover;
+        margin-left: -60px;
+    }
+    .col-lg-12 .body-blog .left-blog img{
         display: inline-block;
         width: 400px;
         height: 223px;
